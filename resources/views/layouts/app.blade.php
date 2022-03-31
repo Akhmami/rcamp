@@ -32,8 +32,20 @@
 <body>
     {{ $slot }}
 
+    <div class="hidden">
+        <div class="w-full rounded" id="popup"><img src="{{ asset('images/baju-pr.jpeg') }}"><img src="{{ asset('images/baju-lk.jpeg') }}"></div>
+    </div>
+
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
+        document.querySelector("#ukuran-baju").addEventListener('click', function(){
+            var image = document.querySelector("#popup");
+            swal({
+                button: false,
+                className: "swal-wide",
+                content: image,
+            });
+        });
         window.addEventListener('swal:modal', event => {
             swal({
                 title: event.detail.title,

@@ -54,7 +54,10 @@
             </div>
         </div>
         <div class="sm:col-span-2">
-            <label for="ukuran_baju" class="block text-sm font-medium text-warm-gray-900">Ukuran Baju</label>
+            <div class="flex justify-between">
+                <label for="ukuran_baju" class="block text-sm font-medium text-warm-gray-900">Ukuran Baju</label>
+                <button type="button" id="ukuran-baju" class="text-sm text-blue-500 hover:underline">Lihat kuran baju</button>
+            </div>
             <div class="mt-1">
                 <input type="text" wire:model.lazy="ukuran_baju"
                     class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md">

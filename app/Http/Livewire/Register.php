@@ -42,11 +42,5 @@ class Register extends Component
         $participant = Participant::create($validatedData);
 
         return redirect()->route('payment', $participant->no_pendaftaran);
-
-        // $this->dispatchBrowserEvent('swal:modal', [
-        //     'type' => 'success',
-        //     'title' => 'Pendaftaran berhasil',
-        //     'text' => 'Informasi lainnya telah kami kirimkan melalui nomor WA ibunda, mohon dilakukan pengecekan atau hubungi kami jika ada kendala.',
-        // ]);
     }
 }
