@@ -37,12 +37,14 @@ class Register extends Component
         $validatedData = $this->validate();
         $validatedData['no_pendaftaran'] = mt_rand(100000, 999999);
 
-        Participant::create($validatedData);
+        $participant = Participant::create($validatedData);
 
-        $this->dispatchBrowserEvent('swal:modal', [
-            'type' => 'success',
-            'title' => 'Pendaftaran berhasil',
-            'text' => 'Informasi lainnya telah kami kirimkan melalui nomor WA ibunda, mohon dilakukan pengecekan atau hubungi kami jika ada kendala.',
-        ]);
+        return redirect()->route('payment', $participant->no_pendaftaran);
+
+        // $this->dispatchBrowserEvent('swal:modal', [
+        //     'type' => 'success',
+        //     'title' => 'Pendaftaran berhasil',
+        //     'text' => 'Informasi lainnya telah kami kirimkan melalui nomor WA ibunda, mohon dilakukan pengecekan atau hubungi kami jika ada kendala.',
+        // ]);
     }
 }
