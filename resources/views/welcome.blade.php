@@ -8,7 +8,7 @@
                     <div class="relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8">
                         <h1 class="text-4xl font-extrabold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">Ramadhan Camp</h1>
                         <p class="mt-6 text-xl text-warm-gray-500 max-w-3xl">
-
+                            Upgrade dirimu menjadi lebih baik di bulan ramadhan, bersama Pesantren Nurul Fikri Boarding School Serang
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                         </svg>
-                                        <span class="ml-3">6287780775548 (WA Only)</span>
+                                        <span class="ml-3">6283811600697 (WA Only)</span>
                                     </dd>
                                     <dt><span class="sr-only">Email</span></dt>
                                     <dd class="flex text-base text-teal-50">
@@ -110,6 +110,7 @@
                                         <span class="ml-3">humas@nfbs.or.id</span>
                                     </dd>
                                 </dl>
+                                <p class="mt-6 text-base text-teal-50 max-w-3xl">Kegiatan diselenggarakan tanggal 14-17 April 2022</p>
                                 <ul role="list" class="mt-8 flex space-x-12">
                                     <li>
                                         <a class="text-teal-200 hover:text-teal-100" href="#">

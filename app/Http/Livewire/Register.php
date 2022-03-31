@@ -9,6 +9,7 @@ class Register extends Component
 {
     public $nama;
     public $jenis_kelamin;
+    public $kelas;
     public $usia;
     public $ukuran_baju;
     public $asal_sekolah;
@@ -20,6 +21,7 @@ class Register extends Component
         'nama' => 'required|max:150',
         'jenis_kelamin' => 'required',
         'usia' => 'required',
+        'kelas' => 'required|numeric',
         'ukuran_baju' => 'required',
         'asal_sekolah' => 'required|max:150',
         'no_wa_ayah' => 'required|max:16',

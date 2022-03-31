@@ -23,6 +23,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    @livewireScripts
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -31,7 +32,6 @@
 <body>
     {{ $slot }}
 
-    @livewireScripts
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         window.addEventListener('swal:modal', event => {

@@ -19,6 +19,7 @@ class CreateParticipantsTable extends Migration
             $table->string('nama');
             $table->enum('jenis_kelamin', ['L','P']);
             $table->string('usia');
+            $table->string('kelas');
             $table->string('ukuran_baju');
             $table->string('asal_sekolah');
             $table->string('no_wa_ayah');

@@ -22,3 +22,7 @@ Route::get('pembayaran/{no_pendaftaran}', function ($no_pendaftaran) {
     $participant = Participant::where('no_pendaftaran', $no_pendaftaran)->first();
     return view('payment', compact('participant'));
 })->name('payment');
+
+Route::get('partisipan', function () {
+    return view('participants');
+});

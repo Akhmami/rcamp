@@ -5,6 +5,7 @@ module.exports = {
     './resources/**/*.blade.php',
     './resources/**/*.js',
     './vendor/filament/**/*.blade.php',
+    './vendor/rappasoft/laravel-livewire-tables/resources/views/tailwind/**/*.blade.php',
   ],
   theme: {
     extend: {

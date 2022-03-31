@@ -33,22 +33,32 @@
                 @enderror
             </div>
         </div>
+        <div>
+            <label for="kelas" class="block text-sm font-medium text-warm-gray-900">Kelas</label>
+            <div class="mt-1">
+                <input type="number" wire:model.lazy="kelas"
+                    class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md">
+                @error('kelas')
+                <strong class="text-red-500">{{ $message }}</strong>
+                @enderror
+            </div>
+        </div>
+        <div>
+            <label for="asal_sekolah" class="block text-sm font-medium text-warm-gray-900">Asal Sekolah</label>
+            <div class="mt-1">
+                <input type="text" wire:model.lazy="asal_sekolah"
+                    class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md">
+                @error('asal_sekolah')
+                <strong class="text-red-500">{{ $message }}</strong>
+                @enderror
+            </div>
+        </div>
         <div class="sm:col-span-2">
             <label for="ukuran_baju" class="block text-sm font-medium text-warm-gray-900">Ukuran Baju</label>
             <div class="mt-1">
                 <input type="text" wire:model.lazy="ukuran_baju"
                     class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md">
                     @error('ukuran_baju')
-                    <strong class="text-red-500">{{ $message }}</strong>
-                    @enderror
-            </div>
-        </div>
-        <div class="sm:col-span-2">
-            <label for="asal_sekolah" class="block text-sm font-medium text-warm-gray-900">Asal Sekolah</label>
-            <div class="mt-1">
-                <input type="text" wire:model.lazy="asal_sekolah"
-                    class="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-teal-500 focus:border-teal-500 border-warm-gray-300 rounded-md">
-                    @error('asal_sekolah')
                     <strong class="text-red-500">{{ $message }}</strong>
                     @enderror
             </div>
